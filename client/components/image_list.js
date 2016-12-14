@@ -1,6 +1,6 @@
 // import react
-import React 	   from 'react';
-import ImageDetail from './image_detail';
+import React, { Component } from 'react';
+import ImageDetail 			from './image_detail';
 
 // create dummy list of images
 const IMAGES = [
@@ -18,7 +18,6 @@ const IMAGES = [
 	}
 ];
 
-// create component
 const ImageList = () => {
 	const RenderedImages = IMAGES.map((image) => {
 		return <ImageDetail key={image.title} image={image} />
