@@ -1,15 +1,17 @@
-import React     from 'react';
-import ReactDOM  from 'react-dom';
-import Axios	 from 'axios'
-import ImageList from './components/image_list';
+import React, { Component } from 'react';
+import ReactDOM  			from 'react-dom';
+import Axios	 			from 'axios'
+import ImageList 			from './components/image_list';
 
 // create component
-const App = () => {
-	return (
-		<div>
-			<ImageList />
-		</div>
-	);
+class App extends Component {
+	render() {
+		return (
+			<div>
+				<ImageList />
+			</div>
+		);
+	}
 };
 
 // run the anonymous function after meteor loaded all files
