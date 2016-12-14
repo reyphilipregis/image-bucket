@@ -2,11 +2,14 @@
 import React from 'react';
 
 // create component
-const ImageDetail = () => {
+const ImageDetail = (props) => {
+	// to access image property object use props.image
+
 	return (
-		<div>
-			Image Detail
-		</div>
+		<li>
+			<img src={props.image.link} />
+			{props.image.title}
+		</li>
 	);
 };
 
