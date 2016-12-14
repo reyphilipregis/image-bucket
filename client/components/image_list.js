@@ -25,8 +25,8 @@ const ImageList = () => {
 	});
 
 	return (
-		<ul>
-			{ RenderedImages }
+		<ul className="medial-list list-group">
+			{RenderedImages}
 		</ul>
 	);
 };
