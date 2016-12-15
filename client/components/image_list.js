@@ -11,7 +11,7 @@ const ImageList = (props) => {
 
 	// create RenderedImages variable to loop the images and create an ImageDetail component
 	const RenderedImages = validImages.map((image) => {
-		return <ImageDetail key={image.title} image={image} />
+		return <ImageDetail key = {image.title} image = {image} />
 	});
 
 	return (
