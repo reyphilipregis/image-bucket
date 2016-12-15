@@ -7,8 +7,8 @@ const ImageScore = (props) => {
 	// props.downs downvotes
 
 	const { ups, downs } = props;
-	const upsPercent     = `$(100 * (ups / (ups + downs)))%`;
-	const downsPercent   = `$(100 * (downs / (ups + downs)))%`;
+	const upsPercent     = `${100 * (ups  / (ups + downs))}%`;
+	const downsPercent   = `${100 * (downs  / (ups + downs))}%`;
 
 	return (
 		<div>
